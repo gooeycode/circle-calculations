@@ -21,7 +21,8 @@ print( "Radius entered is:", circleOne.getRadius() )
 print( "Area is:", circleOne.getArea())
 print( "Diameter is:", circleOne.getDiameter())
 
-circleTwo.setRadius()
+print("")
+
 circleTwo.calculateArea(circleTwo.getRadius())
 circleTwo.calculateDiameter(circleTwo.getRadius())
 print("Radius entered is: ", circleTwo.getRadius() )
