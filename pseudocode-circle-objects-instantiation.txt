@@ -1,0 +1,29 @@
+start
+    //declerations
+        Circle circleOne;
+        Circle circleTwo;
+        num radius;
+        string REPROMPT = "please enter a radius higher than 0";
+
+    //detailLoop
+        output "input radius";
+        input radius;
+
+        while (radius < 0) {
+            ouput REPROMPT;
+            input radius;
+        }
+
+        circleOne.setRadius(radius);
+        circleOne.calculateArea(radius);
+        circleOne.calculateDiameter(radius);
+        output circleOne.getRadius(), circleOne.getArea(), circleOne.getDiameter();
+        
+        output "constructor will give circleTwo a radius of 1"
+        circleTwo.calculateArea(radius);
+        circleTwo.calculateDiameter(radius);
+        output circleTwo.getRadius(), circleTwo.getDiameter(), circleTwo.getArea();
+
+    //endOfJob
+        output "thank you for using this program";
+stop

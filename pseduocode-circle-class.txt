@@ -1,0 +1,62 @@
+Circle
+----------------
+- radius: num
+- area: num
+- diameter: num
+-----------------
++ circle(): void
++ setRadius(radius: num) void
++ getRadius(): num
++ getArea(): num
++ getDiameter(): num
++ calculateRadius(radius: num) void
++ calculateDiameter(radius: num) void
+
+class Circle
+    private num radius;
+    private num area;
+    private num diameter;
+
+    public circle() {
+        radius = 1; 
+    return
+    }
+
+    public void setRadius(num radius) {
+        if (radius <= 0) {
+		output "radius cannot be less than 0 or a negative number. input radius above 0."
+		input radius;
+	  }
+	  else {
+		this.radius = radius;
+	  }
+    return
+    }
+
+    public void calculateDiameter(num radius) {
+        // declerations
+            num diameter;
+            num two = 2;
+        diameter = radius * two;
+    return
+    }
+
+    public void calculateArea(num radius) {
+        // declerations
+            num area;
+            num pi = 3.14;
+        area = (radius * radius) * pi;
+    return
+    }
+
+    public num getRadius() {
+    return this.radius;
+    }
+
+    public num getArea() {
+    return this.area;
+    }
+
+    public num getDiameter() {
+    return this.Diameter;
+    }
