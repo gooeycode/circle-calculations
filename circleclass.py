@@ -9,13 +9,11 @@ class Circle:
         self.radius = 1
     
     def setRadius(self, radius):
-        print ("setter method for radius called")
         if (radius <= 0):
             raise ValueError("radius needs to be more than 0")
             print("enter radius")
         else:
             self.radius = radius
-            print ("Radius has been set to:", self.radius)
         return self.radius
 
 #calculate methods

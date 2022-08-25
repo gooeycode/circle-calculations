@@ -1,4 +1,5 @@
 from circleclass import Circle
+import time
 
 #declerations
 circleOne = Circle()
@@ -17,14 +18,27 @@ while (int(radiusInput) <= ZERO):
 circleOne.setRadius(int(radiusInput))
 circleOne.calculateArea(int(radiusInput))
 circleOne.calculateDiameter(int(radiusInput))
+time.sleep(2)
 print( "Radius entered is:", circleOne.getRadius() )
+time.sleep(2)
 print( "Area is:", circleOne.getArea())
+time.sleep(2)
 print( "Diameter is:", circleOne.getDiameter())
 
 print("")
 
+time.sleep(2)
+
+print ("Circle 2 will be using the constructor radius.")
 circleTwo.calculateArea(circleTwo.getRadius())
 circleTwo.calculateDiameter(circleTwo.getRadius())
-print("Radius entered is: ", circleTwo.getRadius() )
+time.sleep(2)
+print("Constructor is: ", circleTwo.getRadius() )
+time.sleep(2)
 print("Area is:", circleTwo.getArea())
+time.sleep(2)
 print("Diameter is:", circleTwo.getDiameter())
+
+time.sleep(2)
+
+print ("Thank you for using this program, goodbye")
